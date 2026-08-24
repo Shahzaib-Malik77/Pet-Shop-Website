@@ -82,8 +82,8 @@ export const products: Product[] = [
     name: 'Plush Dog Bed',
     price: 39.0,
     tag: 'New',
-    img: 'https://images.unsplash.com/photo-1591946614720-90a587da4a36?w=600',
-    gallery: [px(2607544), px(1851164)],
+    img: 'https://bedsurehome.com/cdn/shop/files/07_3213b409-7d9d-403d-860c-2af78cca4f9e.jpg?v=1758522337',
+    gallery: ['https://bedsurehome.com/cdn/shop/collections/pet_502f5ac0-980a-42ee-ad1b-6d95315028fd.jpg?v=1782892499', 'https://snoozerpetproducts.com/wp-content/uploads/2021/02/CozyCave_Rectangle_Environment-HeatherGray_SQ-7.jpg'],
     category: 'Beds & Houses',
     rating: 4.8,
     reviewCount: 178,
@@ -102,8 +102,11 @@ export const products: Product[] = [
     name: 'Premium Pet Food',
     price: 24.5,
     tag: 'Organic',
-    img: 'https://images.unsplash.com/photo-1535241749838-299277b6305f?w=600',
-    gallery: [px(416160), px(5134985)],
+    img: 'https://mediterraneum.pt/images/KAGdTeyDugVsI572PQCF.png',
+    gallery: [
+      'https://images.unsplash.com/photo-1655210913315-e8147faf7600?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://plus.unsplash.com/premium_photo-1663045476550-6ecee3c164da?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    ],
     category: 'Food',
     rating: 4.8,
     reviewCount: 309,
@@ -122,8 +125,11 @@ export const products: Product[] = [
     name: 'Travel Carrier',
     price: 65.0,
     tag: 'Travel',
-    img: 'https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=600',
-    gallery: [px(2820153), px(356056)],
+    img: 'https://images.unsplash.com/photo-1677847627380-0926540997ae?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    gallery: [
+      'https://images.unsplash.com/photo-1677847627380-0926540997ae?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://images.unsplash.com/photo-1774167096754-330519a788c6?q=80&w=643&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    ],
     category: 'Travel',
     rating: 4.8,
     reviewCount: 142,
@@ -142,8 +148,8 @@ export const products: Product[] = [
     name: 'Grooming Kit',
     price: 18.99,
     tag: 'Care',
-    img: 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=600',
-    gallery: [px(6867479), px(4602431)],
+    img: '/images/grooming_kit.png',
+    gallery: ['/images/grooming_kit.png', '/images/grooming_kit.png'],
     category: 'Grooming',
     rating: 4.7,
     reviewCount: 96,
@@ -161,8 +167,8 @@ export const products: Product[] = [
     name: 'Interactive Toys Set',
     price: 14.0,
     tag: 'Play',
-    img: 'https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=600',
-    gallery: [px(59523), px(38867)],
+    img: '/images/interactive_toys.png',
+    gallery: ['/images/interactive_toys.png', '/images/interactive_toys.png'],
     category: 'Toys',
     rating: 4.7,
     reviewCount: 134,
@@ -180,8 +186,8 @@ export const products: Product[] = [
     name: 'Feather Teaser',
     price: 9.99,
     tag: 'Cats',
-    img: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600',
-    gallery: [px(406014), px(7210784)],
+    img: '/images/feather_teaser.png',
+    gallery: ['/images/feather_teaser.png', '/images/feather_teaser.png'],
     category: 'Toys',
     rating: 4.6,
     reviewCount: 87,
@@ -199,8 +205,8 @@ export const products: Product[] = [
     name: 'Ceramic Bowl Duo',
     price: 16.5,
     tag: 'Feeding',
-    img: 'https://images.unsplash.com/photo-1548337138-e87d889cc369?w=600',
-    gallery: [px(416160), px(1108099)],
+    img: '/images/ceramic_bowl.png',
+    gallery: ['/images/ceramic_bowl.png', '/images/ceramic_bowl.png'],
     category: 'Feeding',
     rating: 4.7,
     reviewCount: 112,
@@ -211,6 +217,91 @@ export const products: Product[] = [
     reviews: [
       { name: 'Mehwish A.', rating: 5, date: '10 days ago', text: 'Heavy, sturdy, and they actually don’t slide. Love the glaze.' },
       { name: 'Owais L.', rating: 4, date: '1 month ago', text: 'Lovely bowls, one arrived with a tiny chip but support replaced fast.' }
+    ]
+  },
+  {
+    id: 'travel-water-bottle',
+    name: 'Portable Water Bottle',
+    price: 12.99,
+    tag: 'Travel',
+    img: '/images/water_bottle.png',
+    gallery: ['/images/water_bottle.png', '/images/water_bottle.png'],
+    category: 'Travel',
+    rating: 4.9,
+    reviewCount: 412,
+    short: 'Leak-proof travel water bottle with a built-in drinking bowl for pets on the go.',
+    description: 'Keep your pet hydrated during walks or road trips. Press the button to release water into the attached bowl, and release to lock. Unused water flows back inside to prevent waste.',
+    features: ['One-hand operation', 'Leak-proof lock', 'BPA-free material', 'Fits cup holders', 'Includes lanyard'],
+    reviews: [
+      { name: 'Kiran A.', rating: 5, date: '1 week ago', text: 'Game changer for our summer walks!' }
+    ]
+  },
+  {
+    id: 'squeaky-bone-toy',
+    name: 'Tough Squeaky Bone',
+    price: 8.50,
+    tag: 'Play',
+    img: '/images/squeaky_bone.png',
+    gallery: ['/images/squeaky_bone.png', '/images/squeaky_bone.png'],
+    category: 'Toys',
+    rating: 4.5,
+    reviewCount: 310,
+    short: 'Durable rubber chew toy with a built-in squeaker for aggressive chewers.',
+    description: 'Made from tough, non-toxic natural rubber that withstands heavy chewing while cleaning teeth. The internal squeaker keeps dogs engaged for hours of independent play.',
+    features: ['Indestructible rubber', 'Built-in squeaker', 'Promotes dental health', 'Floats on water', 'Beef scented'],
+    reviews: [
+      { name: 'Ali M.', rating: 5, date: '2 months ago', text: 'First toy my pitbull hasn\'t destroyed in a day.' }
+    ]
+  },
+  {
+    id: 'beef-dog-food',
+    name: 'Beef Recipe Dog Food',
+    price: 32.00,
+    tag: 'Organic',
+    img: '/images/dog_food.png',
+    gallery: ['/images/dog_food.png', '/images/dog_food.png'],
+    category: 'Food',
+    rating: 4.8,
+    reviewCount: 156,
+    short: 'High-protein dry kibble with real beef and vegetables for strong muscles.',
+    description: 'A nutrient-dense formula for active adult dogs. Made with pasture-raised beef, sweet potatoes, and peas. Fortified with vitamins and probiotics for healthy digestion.',
+    features: ['Real beef is #1 ingredient', 'Supports digestion', 'No wheat or corn', 'Rich in antioxidants', 'For all breed sizes'],
+    reviews: [
+      { name: 'Zainab F.', rating: 4, date: '3 weeks ago', text: 'Dog loves it, but kibble size is a bit small.' }
+    ]
+  },
+  {
+    id: 'slow-feeder-bowl',
+    name: 'Slow Feeder Bowl',
+    price: 14.00,
+    tag: 'Health',
+    img: '/images/slow_feeder.png',
+    gallery: ['/images/slow_feeder.png', '/images/slow_feeder.png'],
+    category: 'Feeding',
+    rating: 4.7,
+    reviewCount: 289,
+    short: 'Puzzle bowl designed to slow down fast eaters and prevent bloating.',
+    description: 'The ridges and mazes force your dog to eat up to 10x slower, improving digestion and reducing the risk of bloat. Holds up to 2 cups of dry or wet food. Dishwasher safe.',
+    features: ['Slows eating by 10x', 'Prevents bloating', 'Food-safe plastic', 'Non-slip base', 'Dishwasher safe'],
+    reviews: [
+      { name: 'Fahad R.', rating: 5, date: '1 month ago', text: 'My lab used to inhale his food in 10 seconds. Now it takes him 5 minutes!' }
+    ]
+  },
+  {
+    id: 'cat-grooming-brush',
+    name: 'Self-Cleaning Brush',
+    price: 15.99,
+    tag: 'Care',
+    img: '/images/self_cleaning_brush.png',
+    gallery: ['/images/self_cleaning_brush.png', '/images/self_cleaning_brush.png'],
+    category: 'Grooming',
+    rating: 4.9,
+    reviewCount: 504,
+    short: 'Slicker brush that removes loose undercoat. Press the button to release the hair.',
+    description: 'Easily detangle and remove loose fur with fine bent wires designed to penetrate deep into the coat without scratching the skin. The push-button retracts the bristles for effortless cleaning.',
+    features: ['One-click fur release', 'Gentle on skin', 'Reduces shedding by 90%', 'Ergonomic handle', 'For cats and dogs'],
+    reviews: [
+      { name: 'Saba H.', rating: 5, date: '2 days ago', text: 'Brushing is so much easier now. The fur just pops right off.' }
     ]
   }
 ];

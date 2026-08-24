@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingBag } from 'lucide-react';
 import PageHeader from '@/components/cozypaws/PageHeader';
@@ -12,17 +13,23 @@ const categories = ['All', 'Beds & Houses', 'Food', 'Travel', 'Grooming', 'Toys'
 
 export default function Shop() {
   const { addToCart } = useShop();
+  const [activeCategory, setActiveCategory] = useState('All');
+  
+  const filteredProducts = activeCategory === 'All' 
+    ? products 
+    : products.filter(p => p.category === activeCategory);
   return (
     <main className="min-h-screen bg-[#EFFDF0] text-[#1a3d1a]">
       <PageHeader title="Shop" subtitle="Everything your pets love — beds, food, toys, grooming and more. Free delivery on orders over $50." />
       <div className="mx-auto max-w-6xl px-4 py-8 md:px-8">
         <div className="mb-6 flex flex-wrap gap-2">
-          {categories.map((c, i) => (
-            <button key={c} onClick={() => toast.message(`Filtering: ${c}`)} className={`rounded-full px-4 py-2 text-sm font-medium transition ${i === 0 ? 'bg-[#1a3d1a] text-white' : 'border border-[#1a3d1a]/15 bg-white text-[#1a3d1a]/70 hover:border-[#1a3d1a]/40'}`}>{c}</button>
+          {categories.map((c) => (
+            <button key={c} onClick={() => setActiveCategory(c)} className={`rounded-full px-4 py-2 text-sm font-medium transition ${activeCategory === c ? 'bg-[#1a3d1a] text-white' : 'border border-[#1a3d1a]/15 bg-white text-[#1a3d1a]/70 hover:border-[#1a3d1a]/40'}`}>{c}</button>
           ))}
         </div>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-          {products.map((p) => (
+          {filteredProducts.length === 0 && <div className="col-span-full py-12 text-center text-gray-500">No products found in this category.</div>}
+          {filteredProducts.map((p) => (
             <Link key={p.id} to={`/product/${p.id}`} className="group flex flex-col overflow-hidden rounded-2xl border border-[#1a3d1a]/10 bg-white transition-shadow hover:shadow-lg">
               <div className="relative aspect-square overflow-hidden bg-[#EFFDF0]">
                 <Image src={p.img} alt={p.name} className="h-full w-full object-cover transition-transform group-hover:scale-105" />
